@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="lab6" type="search_based_path.py" name="search_based_path" output="screen">
+    <rosparam command="load" file="$(find lab6)/params.yaml"/>
+  </node>
+<!-- Launch a map from the maps folder-->
+<!--  <arg name="map" default="$(find lab6)/maps/stata_basement.yaml"/>
+  <node pkg="map_server" name="map_server" type="map_server" args="$(arg map)"/> -->
+</launch>

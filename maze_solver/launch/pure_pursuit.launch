@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find lab6)/launch/follow_trajectory_maze.launch"/>
+    <include file="$(find wall_follower)/launch/safety_test.launch"/>
+</launch>

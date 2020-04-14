@@ -1,0 +1,5 @@
+<launch>
+	<include file="$(find zed_wrapper)/launch/zed.launch"/>
+	<node pkg="lab4" name="line_location" type="line_location.py" output="screen"> </node>
+    <node pkg="lab4" name="cone_parking" type="cone_parking.py" output="screen"> </node>
+</launch>

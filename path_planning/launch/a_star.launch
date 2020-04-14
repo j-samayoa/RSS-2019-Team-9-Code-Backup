@@ -1,0 +1,5 @@
+<launch>
+	<node pkg="lab6" type="a_star_ros.py" name="a_star" output="screen">
+		<param name="save_path" value="$(find lab6)/trajectories/"/>
+	</node>
+</launch>

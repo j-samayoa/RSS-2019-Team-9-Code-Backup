@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="maze_solver" type="maze_solver.py" name="maze_solver" output="screen"/>
+    <node pkg="maze_solver" type="robot_position_broadcaster.py" name="robot_position_broadcaster" output="log"/>
+    <node pkg="maze_solver" type="scan_shifter.py" name="scan_shifter" output="log"/>
+    <include file="$(find cartographer_config)/cartographer.launch"/>
+</launch>

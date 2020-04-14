@@ -1,0 +1,5 @@
+<launch>
+	<node pkg="lab6" type="run_rtt.py" name="RTT" output = "screen">
+		<param name="save_path" value="$(find lab6)/trajectories/"/>
+	</node>
+</launch>
